@@ -23,7 +23,7 @@ body {
     background-color: none;
 }
 .internal-header {
-    background-color: var(--vt-maroon);
+    background-color: #003C71;
     text-align: center;
     text-transform: uppercase;
     font-family: "Acherus", sans-serif;
@@ -73,7 +73,7 @@ body {
 .announce-title H2 {
     min-height: 30px;
     line-height: 30px;
-    background-color: #C64600;
+    background-color: #003C71;
     text-align: center;
     text-transform: uppercase;
     font-family: "Acherus", sans-serif;
@@ -150,7 +150,8 @@ body {
     border-top: 0px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 10px;
 }
 .announce-footer {
     background-color: #C64600;
@@ -193,7 +194,7 @@ body {
 .mcard-links {
 	color: #fff;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
     background-color: var(--vt-maroon);
     border: 2px solid #861F41;
@@ -204,7 +205,7 @@ body {
 .mcard-links2 {
 	color: #861F41;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
     background-color: #fff;
     border: 2px solid #861F41;
@@ -295,7 +296,7 @@ body {
     color: #fff;
     font-weight: 700;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-maroon2 .pcard-title {
@@ -311,7 +312,7 @@ body {
     color: ##861F41;
     font-weight: 700;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-dk-orange .pcard-title {
@@ -327,7 +328,7 @@ body {
 	min-height: 20px;
 	color: #fff;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-dk-orange2 .pcard-title {
@@ -343,7 +344,7 @@ body {
 	min-height: 20px;
 	color: #C64600;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-orange .pcard-title {
@@ -359,7 +360,7 @@ body {
 	min-height: 20px;
 	color: #fff;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-orange2 .pcard-title {
@@ -375,7 +376,7 @@ body {
 	min-height: 20px;
 	color: #E87722;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 .pcard-footer {
