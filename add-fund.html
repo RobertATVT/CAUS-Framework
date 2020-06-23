@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en">
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+        <title>VT CAUS Website Framework</title>
+        
+		<link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery-ui.structure.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+		
+        <link href="Paradox-Grid/paradox.css" rel="stylesheet" type="text/css">
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/font.css" rel="stylesheet" type="text/css">
+        <link href="css/hokies.css" rel="stylesheet" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+		
+    </head> 
+    <body>
+        <div class="container">
+            <div class="rw header">
+                <div class="cl t24 ">
+                    <div class="rw">
+                        <div class="cl t16"></div>
+                        <div class="cl t8 logo"></div>
+                    </div>
+                    <div class="rw">
+                        <div class="cl t24 nav">
+                            <div class="rw">
+                                <div class="cl t1 front-space"></div>
+                                <div class="cl t2 menu-item">Academic Affairs</div>
+                                <div class="cl t2 menu-item">Advancement</div>
+                                <div class="cl t3 menu-item">Business Information</div>
+                                <div class="cl t2 menu-item">Faculty Affairs</div>
+                                <div class="cl t2 menu-item">Fixed Assets</div>
+                                <div class="cl t3 menu-item">Human Resources</div>
+                                <div class="cl t2 menu-item">IT Department</div>
+                                <div class="cl t2 menu-item">Research</div>
+                                <div class="cl t2 menu-item">Safety+Facilities</div>
+                                <div class="cl t2 menu-item">Search</div>
+                                <div class="cl t1 end-space"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rw scholarship-container">
+                <div class="cl t24">
+                    <div class="rw" style="margin-bottom: 20px;">
+                        <div class="cl t24">
+                             <div class="rw">
+                                <div class="cl t24 internal-header"><h1><a href="index.html">CAUS Scholarship Application</a></h1></div>
+                            </div>
+                        </div>
+                        <div class="cl t5 internal-sidebar">
+                            <div class="rw">
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Menu</h2></div>
+                            </div>
+                            <div class="rw">
+                                <div class="cl t24 pr10 pl10">
+                                    <div class="cl t24 mcard-maroon">
+                                        <div class="cl t24 mcard-maroon2">
+                                            <div class="cl t24 mcard-links2">
+                                                <b>Documentation</b><br>
+                                                - Manual<br>
+                                                <b>Administration</b><br>
+                                                - <a href="staff-access.html">Staff Access</a><br>
+                                                - <a href="add-fund.html">Add Fund</a><br>
+                                                - Edit Fund<br>
+                                                - Manage Recipients<br>
+                                                - Manage Departments<br>
+                                                - Activity Log<br>
+                                                - Set Default Year
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cl t19 internal-content">
+                           <div class="rw">
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Staff Access</h2></div>
+                            </div>
+                            <div class="rw">
+                                <div class="cl t24" style="padding: 10px; padding-top: 0px">
+                                    <div class="rw">
+                                        <div class="cl t24 pcard-maroon2">
+                                            <div class="rw">
+                                                <div class="cl t24 pcard-header filled-maroon"></div>
+                                            </div>
+                                            <div class="rw pcard-headings">
+                                                <div class="cl t24">
+                                                    <table cellspacing="1" cellpadding="0" width="98%" border="0" valign="top" align="center" class="standard"><tbody>		
+				<tr bgcolor="#cccccc"><td align="center" valign="middle" style="border-bottom: 2px solid" colspan="2"><b>Enter a New Fund</b></td></tr>
+				<tr><td colspan="2" align="center" valign="middle">&nbsp;</td></tr>		
+				<tr><td valign="top" align="center" width="60%">
+						<table cellspacing="0" cellpadding="0" width="98%" border="0" valign="top" class="standard"><tbody>		
+								<form name="award" method="post" action="/index.php"></form>								
+								<tr bgcolor="#000000"><td valign="top" align="center"><b><font color="white">Award Information</font></b></td></tr>
+								<tr><td valign="top" align="center">&nbsp;</td></tr>
+								<tr><td valign="top" align="left"><b><font color="red">*</font>Fund Name : </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="name" value="" style="width: 80%; margin: 0px 5px"><input type="button" name="submitA" value="Lookup" onclick="lookupAward(1);"></td></tr>
+								<tr><td valign="top" align="left"><b><font color="red">*</font>Fund # : </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="number" value="" style="width: 80%; margin: 0px 5px"><input type="button" name="submitB" value="Lookup" onclick="lookupAward(2);"></td></tr>
+								<tr><td valign="top" align="left"><b>Department : </b></td></tr>
+								<tr><td valign="top" align="left"><select name="dept" style="width: 80%; margin: 0px 5px" disabled=""><option value="0" selected="">Select a department</option>
+<option value="005900">School of Visual Arts</option>
+<option value="015100">School of Architecture + Design</option>
+<option value="15102">Industrial Design Program</option>
+<option value="015200">Department of Building Construction</option>
+<option value="034700">College of Architecture &amp; Urban Studies</option>
+<option value="015104">Landscape Architecture Program</option>
+<option value="015400">School of Public &amp; International Affairs</option>
+<option value="015101">Interior Design Program</option>
+<option value="015402">Public Administration and Policy</option>
+<option value="015401">Urban Affairs &amp; Planning</option>
+<option value="015403">Government &amp; International Affairs</option>
+<option value="038700">Myers-Lawson School of Construction</option>
+<option value="000000">Test Department</option>
+<option value="359">Virginia Center for Housing Research</option>
+<option value="365">Community Design Assistance Center</option>
+<option value="050600">Real Estate Program</option>
+</select>
+</td></tr>
+								<tr><td valign="top" align="left"><b>Award Description or Criteria : </b></td></tr>
+								<tr><td valign="top" align="left"><textarea name="purpose" disabled="" rows="6" cols="65" style="width: 80%; margin: 5px"></textarea></td></tr>
+								<tr><td valign="top" align="left"><b>Academic Year : </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="year" disabled="" maxlength="4" value="" style="width: 40%; margin: 5px">(YYYY)</td></tr>
+								<tr><td valign="top" align="left"><b>Amount Available for Current Year : </b></td></tr>
+								<tr><td valign="top" align="left">$<input type="text" name="amount" disabled="" value="" style="width: 38%;"></td></tr>
+								<tr><td valign="top" align="center">&nbsp;</td></tr>
+								<tr><td valign="top" align="left" style="border-top: 1px solid">
+									<table cellspacing="0" cellpadding="0" width="98%" border="0" valign="top" class="noborder"><tbody>
+											<tr><td valign="top" align="left">
+													<fieldset style="height:120px; width:80%; margin: 5px"><legend><b><font color="red">*</font>Type of Award</b></legend>
+<input type="radio" name="awardtype" disabled="" onclick="disableType(1);" value="1" checked="" style="border : 0px;">Scholarship Endowed<br>
+<input type="radio" name="awardtype" disabled="" onclick="disableType(2);" value="2" style="border : 0px;">Annual Scholarship<br>
+<input type="radio" name="awardtype" disabled="" onclick="disableType(3);" value="3" style="border : 0px;">Monetary from Sponsor<br>
+<input type="radio" name="awardtype" disabled="" onclick="disableType(4);" value="4" style="border : 0px;">Monetary Through VTF<br>
+<input type="radio" name="awardtype" disabled="" onclick="disableType(5);" value="5" style="border : 0px;">Other (specify)<br></fieldset>	
+											</td><td valign="top" align="left">
+													<fieldset style="height:120px; width:80%; margin: 5px"><legend><b><font color="red">*</font>Fund Classification</b></legend>
+<input type="radio" name="awardcode" disabled="" value="1" checked="" style="border : 0px;">NAMS<br>
+<input type="radio" name="awardcode" disabled="" value="2" style="border : 0px;">NOMS<br>
+<input type="radio" name="awardcode" disabled="" value="3" style="border : 0px;">SCHL<br>
+<input type="radio" name="awardcode" disabled="" value="4" style="border : 0px;">NSCH<br>
+<input type="radio" name="awardcode" disabled="" value="5" style="border : 0px;">MSCH<br></fieldset>	
+											</td></tr>
+									</tbody></table>
+								</td></tr>
+								<!--
+								<tr><td valign="top" align="left"><b>Total Amount of Money </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="awardmoney" disabled value="" style="width: 80%; margin: 5px"></td></tr>
+								-->
+								<tr><td valign="top" align="left"><b>Other / Non-Monetary </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="typeOther" disabled="" value="" style="width: 80%; margin: 5px"></td></tr>
+								<tr><td valign="top" align="left"><b>Term of Award </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="awardterm" disabled="" value="" style="width: 80%; margin: 5px"></td></tr>
+								<tr><td valign="top" align="left" style="border-top: 1px solid"><font color="red">*</font>The item is required</td></tr>
+						</tbody></table>
+				</td><td valign="top" align="center">
+						<table cellspacing="0" cellpadding="0" width="98%" border="0" valign="top" class="standard"><tbody>
+								<tr bgcolor="#000000"><td valign="top" align="center" colspan="2"><b><font color="white">Donor Information</font></b></td></tr>
+								<tr><td valign="top" align="center" colspan="2">&nbsp;</td></tr>
+								<tr><td valign="top" align="left" colspan="2"><b><font color="red">*</font>Donor Name : </b></td></tr>
+								<tr><td valign="top" align="left" colspan="2"><input type="text" name="donor_name" disabled="" value="" style="width: 80%; margin: 5px"></td></tr>
+								<tr><td valign="top" align="left" colspan="2"><b><font color="red">*</font>Donor Address : </b></td></tr>
+								<tr><td valign="top" align="left" colspan="2"><textarea name="donor_address" disabled="" rows="3" cols="65" style="width: 80%; margin: 5px"></textarea></td></tr>
+								<tr><td valign="top" align="left" width="50%"><b>City : </b></td><td valign="top" align="left"><b>State : </b></td></tr>
+								<tr><td valign="top" align="left" width="50%"><input type="text" name="donor_city" disabled="" value="" style="width: 90%; margin: 5px"></td><td valign="top" align="left"><select name="donor_state" style="width: 90%; margin: 0px 5px" disabled=""><option value="0" selected="">Not Available</option>
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AR">AR</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="HI">HI</option>
+<option value="IA">IA</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="ME">ME</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="NE">NE</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VA">VA</option>
+<option value="VT">VT</option>
+<option value="WA">WA</option>
+<option value="WI">WI</option>
+<option value="WV">WV</option>
+<option value="WY">WY</option>
+</select>
+</td></tr>
+								<tr><td valign="top" align="left" width="50%"><b>Zipcode : </b></td><td valign="top" align="left"><b>Telephone : </b></td></tr>
+								<tr><td valign="top" align="left" width="50%"><input type="text" name="donor_zipcode" disabled="" value="" style="width: 90%; margin: 5px"></td><td valign="top" align="left"><input type="text" name="donor_telephone" disabled="" value="" style="width: 90%; margin: 5px"></td></tr>
+								<tr><td valign="top" align="left" width="50%"><b>E-mail : </b></td><td valign="top" align="left"><b><font color="red">*</font>Year Established : </b></td></tr>
+								<tr><td valign="top" align="left"><input type="text" name="donor_email" disabled="" value="" style="width: 90%; margin: 5px"></td><td valign="top" align="left"><input type="text" name="donor_year" disabled="" value="" style="width: 40%; margin: 5px">
+						</td></tr></tbody></table>
+				</td></tr>
+				<tr bgcolor="#cccccc"><td colspan="2" align="right" valign="middle" style="height:30px"><input type="button" name="close" value="Cancel" onclick="window.location='index.php'">
+							<input type="submit" name="submit" value="Submit" onclick="return checkAward(0);">
+							<input type="hidden" name="fn" value="insertAward">
+							<input type="hidden" name="award" value="">
+							<input type="hidden" name="category!!" value="award"></td></tr>
+				
+		</tbody></table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="rw footer">
+                <div class="cl t24">
+                    <div class="cl t24">
+                        <div class="">
+                            <h4>COLLEGE OF ARCHITECTURE AND URBAN STUDIES</h4><br>
+                            202 Cowgill Hall (0205) • 1325 Perry Street • Blacksburg, VA 24061 • 540-231-6416<br>
+                            © 2016 Virginia Polytechnic Institute and State University          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

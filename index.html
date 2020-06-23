@@ -18,8 +18,8 @@
 		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-        <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 		
     </head> 
     <body>
@@ -55,21 +55,23 @@
                     <div class="rw">
                         <div class="cl t24">
                              <div class="rw">
-                                <div class="cl t24 internal-header"><h1>CAUS Scholarship Application</h1></div>
+                                <div class="cl t24 internal-header"><h1><a href="index.html">CAUS Scholarship Application</a></h1></div>
                             </div>
                         </div>
-                        <div class="cl t3 internal-sidebar">
+                        <div class="cl t4 internal-sidebar">
                             <div class="rw">
-                                <div class="cl t6" style="width: 100%; padding: 10px; padding-top: 10px;">
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Menu</h2></div>
+                            </div>
+                            <div class="rw">
+                                <div class="cl t24 pr10 pl10">
                                     <div class="cl t24 mcard-maroon">
                                         <div class="cl t24 mcard-maroon2">
                                             <div class="cl t24 mcard-links2">
                                                 <b>Documentation</b><br>
                                                 - Manual<br>
                                                 <b>Administration</b><br>
-                                                - Staff Access<br>
-                                                - Announcements<br>
-                                                - Add Fund<br>
+                                                - <a href="staff-access.html">Staff Access</a><br>
+                                                - <a href="add-fund.html">Add Fund</a><br>
                                                 - Edit Fund<br>
                                                 - Manage Recipients<br>
                                                 - Manage Departments<br>
@@ -81,104 +83,201 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cl t21 internal-content">
-                           
+                        <div class="cl t20 internal-content">
+                           <div class="rw">
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Scholarship Search</h2></div>
+                            </div>
                             <div class="rw">
-                                <div class="cl t12" style="padding: 10px;">
-                                    <div class="rw">
-                                        <div class="cl t24 pcard-maroon">
-                                            <div class="rw">
-                                                <div class="cl t24 pcard-header"></div>
-                                            </div>
-                                            <div class="rw">
-                                                <div class="cl t24 pcard-title">School of Architecture</div>
-                                            </div>
-                                            <div class="rw">
-                                                <div class="cl t8"></div>
-                                                <div class="cl t8 pcard-links">
-                                                    Industrial Design Program<br>
-                                                    Interior Design Program<br>
-                                                    Interior Design Program<br>
-                                                    Interior Design Program<br>
-                                                    Landscape Architecture Program
-                                                </div>
-                                                <div class="cl t8"></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cl t12" style="padding: 10px;">
+                                <div class="cl t24" style="padding: 10px; padding-top: 0px">
                                     <div class="rw">
                                         <div class="cl t24 pcard-maroon2">
-                                            <div class="rw pcard-header"></div>
-                                            <div class="rw pcard-title">School of Visual Arts</div>
-                                            <div class="rw pcard-footer"></div>
+                                            <div class="rw pcard-forms">
+                                                <form id="award-search-form">
+                                                    <div class="cl t2">&nbsp;</div>
+                                                    <div class="cl t5">
+                                                        <label for="scholarship-unit">Choose an Organization</label><br>
+                                                        <select onchange="unitChange()" name="scholarship-unit" id="scholarship-unit" style="width: 95%;">
+                                                            <option value=""># Select an Organization</option>
+                                                            <option value="caus">College of Architecture & Urban Studies</option>
+                                                            <option value="cdac">&nbsp;- Community Design Assistance Center</option>
+                                                            <option value="sad">School of Architecture + Design</option>
+                                                            <option value="sad-ind">&nbsp;- Industrial Design</option>
+                                                            <option value="sad-int">&nbsp;- Interior Design</option>
+                                                            <option value="sad-lar">&nbsp;- Landscape Architecture</option>
+                                                            <option value="sova">School of Visual Arts</option>
+                                                            <option value="spia">School of Public and International Affairs</option>
+                                                            <option value="spia-cpap">&nbsp;- Public Administration and Policy</option>
+                                                            <option value="spia-gia">&nbsp;- Government and International Affairs</option>
+                                                            <option value="spia-uap">&nbsp;- Urban Affairs and Planning</option>
+                                                            <option value="mlsoc">Myers-Lawson School of Construction</option>
+                                                            <option value="mlsoc-bc">&nbsp;- Department of Building Construction</option>
+                                                            <option value="rep">Real Estate Program</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="award-search">Choose Search Type</label><br>
+                                                        <select onchange="searchChange()" name="award-search" id="award-search" style="width: 95%;" disabled>
+                                                            <option value=""># Select a Search Type</option>
+                                                            <option value="award-schol">Awards & Scholarships</option>
+                                                            <option value="award-name">Award Name</option>
+                                                            <option value="award-recipient">Award Recipient</option>
+                                                            <option value="award-donor">Award Donor</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="award-type">Choose Award Type</label><br>
+                                                        <select name="award-type" id="award-type" style="width: 95%;" disabled>
+                                                            <option value=""># Select an Award Type</option>
+                                                            <option value="award-name">Award Name</option>
+                                                            <option value="award-fund">Fund Number</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="cars">Extra Search Info</label><br>
+                                                        <input type="text" style="width: 80%"><input type="submit" style="background: #861F41; color: #fff; outline: none; border: none; border-radius: 3px; margin-left: 5px; font-size: 10px; font-weight: 700; line-height: 14px; padding: 4px; vertical-align: top;" disabled>
+                                                    </div>
+                                                    <div class="cl t2">&nbsp;</div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="rw">
-                                <div class="cl t12" style="padding: 10px;">
-                                    <div class="cl t24 pcard-dk-orange">
-                                        <div class="rw pcard-header"></div>
-                                        <div class="rw pcard-title">School of Public & International Affairs</div>
-                                        <div class="rw pcard-links">Public Administration and Policy</div>
-                                        <div class="rw pcard-links">Government & International Affairs</div>
-                                        <div class="rw pcard-links">Urban Affairs & Planning</div>
-                                        <div class="rw pcard-footer"></div>
-                                    </div>
-                                </div>
-                                <div class="cl t12" style="padding: 10px;">
-                                    <div class="cl t24 pcard-dk-orange2">
-                                        <div class="rw pcard-header"></div>
-                                        <div class="rw pcard-title">Myers-lawson School of Construction</div>
-                                        <div class="rw pcard-links">Department of Building Construction</div>
-                                        <div class="rw pcard-links">Department of Building Construction</div>
-                                        <div class="rw pcard-links">Department of Building Construction</div>
-                                        <div class="rw pcard-footer"></div>
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Scholarship Reports</h2></div>
+                            </div>
+                            <div class="rw">
+                                <div class="cl t24" style="padding: 10px; padding-top: 0px">
+                                    <div class="rw">
+                                        <div class="cl t24 pcard-maroon2">
+                                            <div class="rw pcard-forms">
+                                                <form id="award-search-form">
+                                                    <div class="cl t2">&nbsp;</div>
+                                                    <div class="cl t5">
+                                                        <label for="cars">Choose an Organization</label><br>
+                                                        <select name="scholarship-unit" id="scholarship-unit" style="width: 95%;">
+                                                            <option value="caus">College of Architecture & Urban Studies</option>
+                                                            <option value="cdac">&nbsp;- Community Design Assistance Center</option>
+                                                            <option value="sad">School of Architecture + Design</option>
+                                                            <option value="sad-ind">&nbsp;- Industrial Design</option>
+                                                            <option value="sad-int">&nbsp;- Interior Design</option>
+                                                            <option value="sad-lar">&nbsp;- Landscape Architecture</option>
+                                                            <option value="sova">School of Visual Arts</option>
+                                                            <option value="spia">School of Public and International Affairs</option>
+                                                            <option value="spia-cpap">&nbsp;- Public Administration and Policy</option>
+                                                            <option value="spia-gia">&nbsp;- Government and International Affairs</option>
+                                                            <option value="spia-uap">&nbsp;- Urban Affairs and Planning</option>
+                                                            <option value="mlsoc">Myers-Lawson School of Construction</option>
+                                                            <option value="mlsoc-bc">&nbsp;- Department of Building Construction</option>
+                                                            <option value="rep">Real Estate Program</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="cars">Choose Search Type</label><br>
+                                                        <select name="award-search" id="award-search" style="width: 95%;">
+                                                            <option value="award+schol">Awards & Scholarships</option>
+                                                            <option value="award-name">Award Name</option>
+                                                            <option value="award-recipient">Award Recipient</option>
+                                                            <option value="award-donor">Award Donar</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="cars">Choose Award Type</label><br>
+                                                        <select name="award-type" id="award-type" style="width: 95%;">
+                                                            <option value="award+name">Award Name</option>
+                                                            <option value="award-fund">Fund Number</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="cl t5">
+                                                        <label for="cars">Extra Search Info</label><br>
+                                                        <input type="text" style="width: 80%"><input type="submit" style="background: #861F41; color: #fff; outline: none; border: none; border-radius: 3px; margin-left: 5px; font-size: 10px; font-weight: 700; line-height: 14px; padding: 4px; vertical-align: top;">
+                                                    </div>
+                                                    <div class="cl t2">&nbsp;</div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="rw">
-                        <div class="cl t24 internal-announcements">
-                            <div class="rw">
-                                <div class="cl t24 announce-title"><h2>Announcements</h2></div>
+                                <div class="cl t24 announce-title"><h2 class="vt-maroon">Additional Operations</h2></div>
                             </div>
-                            <div class="rw announcement-container">
-                                    <div class="cl t24">
-                                        <div class="rw announce-header">
-                                            <div class="cl t24 p5 t-center">Test Announcement</div>
-                                        </div>
-                                        <div class="rw announce-subject-line">
-                                            <div class="cl t4 p5 announce-sub">Submitted By:</div>
-                                            <div class="cl t10 p5 announce-author">Erin Poff</div>
-                                            <div class="cl t4 p5 announce-sub t-right">Timestamp:</div>
-                                            <div class="cl t6 p5 announce-time">June 1, 2020</div>
-                                        </div>
-                                        <div class="rw">
-                                            <div class="cl t24 p5 announce-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                        </div>
+                            <div class="rw">
+                                <div class="cl t24" style="padding: 10px; padding-top: 0px">
+                                    <div class="rw">
+                                        <form>
+                                            <div class="cl t24 pcard-maroon2">
+                                                <div class="rw pcard-forms">
+                                                    <div class="cl t2"></div>
+                                                    <div class="cl t6">
+                                                        <label for="cars">Enter a New Award Recipient</label><br>
+                                                        <select name="scholarship-unit" id="scholarship-unit" style="width: 95%;">
+                                                            <option value="caus">College of Architecture & Urban Studies</option>
+                                                            <option value="cdac">&nbsp;- Community Design Assistance Center</option>
+                                                            <option value="sad">School of Architecture + Design</option>
+                                                            <option value="sad-ind">&nbsp;- Industrial Design</option>
+                                                            <option value="sad-int">&nbsp;- Interior Design</option>
+                                                            <option value="sad-lar">&nbsp;- Landscape Architecture</option>
+                                                            <option value="sova">School of Visual Arts</option>
+                                                            <option value="spia">School of Public and International Affairs</option>
+                                                            <option value="spia-cpap">&nbsp;- Public Administration and Policy</option>
+                                                            <option value="spia-gia">&nbsp;- Government and International Affairs</option>
+                                                            <option value="spia-uap">&nbsp;- Urban Affairs and Planning</option>
+                                                            <option value="mlsoc">Myers-Lawson School of Construction</option>
+                                                            <option value="mlsoc-bc">&nbsp;- Department of Building Construction</option>
+                                                            <option value="rep">Real Estate Program</option>
+                                                        </select><br>
+                                                        <input type="submit" style="background: #861F41; color: #fff; outline: none; border: none; border-radius: 3px; margin-top: 10px; font-size: 10px; font-weight: 700; line-height: 14px; padding: 4px; vertical-align: top; width: 95%; cursor: pointer;">
+                                                    </div>
+                                                    <div class="cl t1"></div>
+                                                    <div class="cl t6">
+                                                        <label for="cars">Update an Existing Award Recipient</label><br>
+                                                        <select name="scholarship-unit" id="scholarship-unit" style="width: 95%;">
+                                                            <option value="caus">College of Architecture & Urban Studies</option>
+                                                            <option value="cdac">&nbsp;- Community Design Assistance Center</option>
+                                                            <option value="sad">School of Architecture + Design</option>
+                                                            <option value="sad-ind">&nbsp;- Industrial Design</option>
+                                                            <option value="sad-int">&nbsp;- Interior Design</option>
+                                                            <option value="sad-lar">&nbsp;- Landscape Architecture</option>
+                                                            <option value="sova">School of Visual Arts</option>
+                                                            <option value="spia">School of Public and International Affairs</option>
+                                                            <option value="spia-cpap">&nbsp;- Public Administration and Policy</option>
+                                                            <option value="spia-gia">&nbsp;- Government and International Affairs</option>
+                                                            <option value="spia-uap">&nbsp;- Urban Affairs and Planning</option>
+                                                            <option value="mlsoc">Myers-Lawson School of Construction</option>
+                                                            <option value="mlsoc-bc">&nbsp;- Department of Building Construction</option>
+                                                            <option value="rep">Real Estate Program</option>
+                                                        </select><br>
+                                                        <input type="submit" style="background: #861F41; color: #fff; outline: none; border: none; border-radius: 3px; margin-top: 10px; font-size: 10px; font-weight: 700; line-height: 14px; padding: 4px; vertical-align: top; width: 95%; cursor: pointer;">
+                                                    </div>
+                                                    <div class="cl t1"></div>
+                                                    <div class="cl t6">
+                                                        <label for="cars">Update an Existing Award Donor</label><br>
+                                                        <select name="scholarship-unit" id="scholarship-unit" style="width: 95%;">
+                                                            <option value="caus">College of Architecture & Urban Studies</option>
+                                                            <option value="cdac">&nbsp;- Community Design Assistance Center</option>
+                                                            <option value="sad">School of Architecture + Design</option>
+                                                            <option value="sad-ind">&nbsp;- Industrial Design</option>
+                                                            <option value="sad-int">&nbsp;- Interior Design</option>
+                                                            <option value="sad-lar">&nbsp;- Landscape Architecture</option>
+                                                            <option value="sova">School of Visual Arts</option>
+                                                            <option value="spia">School of Public and International Affairs</option>
+                                                            <option value="spia-cpap">&nbsp;- Public Administration and Policy</option>
+                                                            <option value="spia-gia">&nbsp;- Government and International Affairs</option>
+                                                            <option value="spia-uap">&nbsp;- Urban Affairs and Planning</option>
+                                                            <option value="mlsoc">Myers-Lawson School of Construction</option>
+                                                            <option value="mlsoc-bc">&nbsp;- Department of Building Construction</option>
+                                                            <option value="rep">Real Estate Program</option>
+                                                        </select><br>
+                                                        <input type="submit" style="background: #861F41; color: #fff; outline: none; border: none; border-radius: 3px; margin-top: 10px; font-size: 10px; font-weight: 700; line-height: 14px; padding: 4px; vertical-align: top; width: 95%; cursor: pointer;">
+                                                    </div>
+                                                    <div class="cl t2"></div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            <div class="rw announcement-container">
-                                    <div class="cl t24">
-                                        <div class="rw announce-header">
-                                            <div class="cl t24 p5 t-center">Test Announcement</div>
-                                        </div>
-                                        <div class="rw announce-subject-line">
-                                            <div class="cl t4 p5 announce-sub">Submitted By:</div>
-                                            <div class="cl t10 p5 announce-author">Erin Poff</div>
-                                            <div class="cl t4 p5 announce-sub t-right">Timestamp:</div>
-                                            <div class="cl t6 p5 announce-time">June 1, 2020</div>
-                                        </div>
-                                        <div class="rw">
-                                            <div class="cl t24 p5 announce-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
+                            </div>
                         </div>
                     </div>
                     

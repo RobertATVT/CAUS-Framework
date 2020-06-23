@@ -19,6 +19,10 @@ body {
     background: linear-gradient(to right,  #861f41 1%,#e87722 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#861f41', endColorstr='#e87722',GradientType=1 ); /* IE6-9 */
 }
+.scholarship-container {
+    background: #ccc;
+    padding-bottom: 15px;
+}
 .internal-sidebar {
     background-color: none;
 }
@@ -217,6 +221,14 @@ body {
     padding: 10px;
     min-height: 60px;
 }
+.mcard-links2 a {
+    color: #861F41;
+	text-align: left;
+	font-size: 18px;
+	line-height: 24px; 
+    text-decoration: none;
+    cursor: pointer;
+}
 .mcard-footer {
 	height: 30px; 
 	min-height: 30px;
@@ -242,6 +254,7 @@ body {
     margin: 0 auto;
     display: inline-block;
     padding-bottom: 20px;
+    background: #fff;
 }
 .pcard-dk-orange {
 	width: 100%;
@@ -286,6 +299,15 @@ body {
 .pcard-header {
 	height: 30px; 
 	min-height: 30px;
+}
+.pcard-header.filled-maroon {
+    background: #861F41;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 .pcard-maroon .pcard-title {
 	text-align: center; 
@@ -379,10 +401,11 @@ body {
 }
 .pcard-maroon2 .pcard-links a {
     text-decoration: none;
+    font-weight: 700;
     color: #861F41;
     cursor: pointer;
 }
-.pcard-maroon2 .pcard-links::before {
+/*.pcard-maroon2 .pcard-links::before {
     content: "";
     position: relative;
     display: inline-block;
@@ -394,6 +417,44 @@ body {
     border-radius: 50%;
     border: 3px solid #861F41;
 	background: transparent !important;
+}*/
+.pcard-maroon2 .pcard-headings {
+    height: 100%;
+    color: #861F41;
+    font-weight: 600;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+    border-bottom: 1px solid #861F41;
+    text-transform: uppercase;
+}
+.pcard-maroon2 .pcard-forms {
+    height: 100%;
+    color: #861F41;
+    font-weight: 600;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.pcard-maroon2 .pcard-odd {
+    height: 100%;
+    color: #333;
+    font-weight: 400;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+    background: #eee;
+}
+.pcard-maroon2 .pcard-even {
+    height: 100%;
+    color: #333;
+    font-weight: 400;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+    background: #fefefe;
 }
 .pcard-dk-orange .pcard-title {
     height: 100%;
